@@ -7,11 +7,13 @@ import (
 )
 
 func main() {
-	// TODO: Scan Keyboard input
-	n, err := fmt.Scanln()
+	var n int
+	fmt.Println("Fib Sequence calculator")
+	fmt.Print("Please enter a number: ")
+	_, err := fmt.Scanf("%d", &n)
 
 	if err != nil {
-		panic("An unexpected error occured")
+		panic(err)
 	}
 
 	fmt.Println(fibonacci.Fibonacci(n))
