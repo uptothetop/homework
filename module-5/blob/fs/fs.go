@@ -1,13 +1,13 @@
 package blobfs
 
-func Get(blob string) ([]byte, err) {
+func Get(key string) ([]byte, string) {
 
 }
 
-func Put(blob string, data []byte) err {
+func Put(key string, value []byte) string {
 
 }
 
-func Delete(string) err {
+func Delete(key string) string {
 
 }
